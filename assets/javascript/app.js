@@ -36,7 +36,7 @@
     	questions: ["Mantis shrimp have the most advanced eyes in the animal kingdom.",
     				"Dolphins are Pinnipeds.",
     				"Sea urchins are Echinoderms.",
-    				"Coral reefs grow faster in the presence of greater volumes carbon dioxide",
+    				"Coral reefs grow faster in the presence of greater volumes of carbon dioxide",
     				"Bonus, subjective: Crabs think fish can fly."
     	],
     	question1: ["True",
@@ -57,6 +57,12 @@
 
     }
 
+    var question1;
+    var question2;
+    var question3;
+    var question4;
+    var question5;
+
     $("#questionOne").html(triviaQuestions.questions[0]);
     $("#questionOne").append(triviaQuestions.questions[0]);
 
@@ -66,24 +72,24 @@
 
     $("#button1").html("<button 'True' />")
 
-    $("#questionOne").append(triviaQuestions.questions[1]);
+    $("#questionTwo").append(triviaQuestions.questions[1]);
 
 
     console.log(triviaQuestions.questions[1]);
     console.log(triviaQuestions.question2);
 
-	$("#questionOne").append(triviaQuestions.questions[2]);
+	$("#questionThree").append(triviaQuestions.questions[2]);
 
  
     console.log(triviaQuestions.questions[2]);
     console.log(triviaQuestions.question3);
 
-	$("#questionOne").append(triviaQuestions.questions[3]);
+	$("#questionFour").append(triviaQuestions.questions[3]);
 
     console.log(triviaQuestions.questions[3]);
     console.log(triviaQuestions.question4);
 
-	$("#questionOne").append(triviaQuestions.questions[4]);
+	$("#questionFive").append(triviaQuestions.questions[4]);
 
     console.log(triviaQuestions.questions[4]);
     console.log(triviaQuestions.question5);
@@ -107,7 +113,7 @@
     	//ensure only one button can be clicked at a time
     	//when the timer reaches zero, load a new page (or maybe make an alert) that lists the number correct, the number incorrect, and the number unanswered (if applicable)
     	//reset the parameters and page values after ten seconds (make another timer)
-    	
+
 
 
 
