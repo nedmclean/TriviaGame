@@ -38,33 +38,59 @@
     }
 
     var triviaQuestions = {
-    	Questions: ["Mantis shrimp have the most advanced eyes in the animal kingdom.",
+    	questions: ["Mantis shrimp have the most advanced eyes in the animal kingdom.",
     				"Dolphins are Pinnipeds.",
     				"Sea urchins are Echinoderms.",
     				"Sea otters regularly engage in non-consensual intercourse with baby sea lions.",
     				"Bonus, subjective: Crabs think fish can fly."
     	],
-    	Question1: ["True",
+    	question1: ["True",
     				"False"
     	],
-    	Question2: ["True",
+    	question2: ["True",
     				"False"
     	],
-    	Question3: ["True",
+    	question3: ["True",
     				"False"
     	],
-    	Question4: ["True",
+    	question4: ["True",
     				"False"
     	],
-    	Question5: ["True",
+    	question5: ["True",
     				"False"
     	],
 
     }
 
-    $("#questions").text(triviaQuestions);
+    $("#questionOne").append(triviaQuestions.questions[0]);
 
     console.log(triviaQuestions);
+    console.log(triviaQuestions.questions[0]);
+    console.log(triviaQuestions.question1);
+
+    $("#questionOne").append(triviaQuestions.questions[1]);
+
+
+    console.log(triviaQuestions.questions[1]);
+    console.log(triviaQuestions.question2);
+
+	$("#questionOne").append(triviaQuestions.questions[2]);
+
+ 
+    console.log(triviaQuestions.questions[2]);
+    console.log(triviaQuestions.question3);
+
+	$("#questionOne").append(triviaQuestions.questions[3]);
+
+    console.log(triviaQuestions.questions[3]);
+    console.log(triviaQuestions.question4);
+
+	$("#questionOne").append(triviaQuestions.questions[4]);
+
+    console.log(triviaQuestions.questions[4]);
+    console.log(triviaQuestions.question5);
+
+
 
     //  The stop function
     function stop() {
