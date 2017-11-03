@@ -1,33 +1,33 @@
+  
+
+
+
   var number = 90;
 
     var intervalId;
 
 
 ;
-
-    //  When the resume button gets clicked, execute the run function.
     $("#Start").on("click", run);
 
-    //  The run function sets an interval
-    //  that runs the decrement function once a second.
+
     function run() {
       intervalId = setInterval(decrement, 1000);
     }
 
-    //  The decrement function.
+
     function decrement() {
 
-      //  Decrease number by one.
+
       number--;
 
-      //  Show the number in the #show-number tag.
+
       $("#show-number").html("<h2>" + number + "</h2>");
 
 
-      //  Once number hits zero...
       if (number === 0) {
 
-        //  ...run the stop function.
+      
         stop();
       }
     }
