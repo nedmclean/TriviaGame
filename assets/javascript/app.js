@@ -1,11 +1,9 @@
-  var number = 100;
+  var number = 90;
 
-    //  Variable that will hold our interval ID when we execute
-    //  the "run" function
     var intervalId;
 
-    //  When the stop button gets clicked, run the stop function.
-    $("#stop").on("click", stop);
+
+;
 
     //  When the resume button gets clicked, execute the run function.
     $("#Start").on("click", run);
@@ -31,9 +29,6 @@
 
         //  ...run the stop function.
         stop();
-
-        //  Alert the user that time is up.
-        alert("Time Up!");
       }
     }
 
@@ -41,7 +36,7 @@
     	questions: ["Mantis shrimp have the most advanced eyes in the animal kingdom.",
     				"Dolphins are Pinnipeds.",
     				"Sea urchins are Echinoderms.",
-    				"Sea otters regularly engage in non-consensual intercourse with baby sea lions.",
+    				"Coral reefs grow faster in the presence of greater volumes carbon dioxide",
     				"Bonus, subjective: Crabs think fish can fly."
     	],
     	question1: ["True",
@@ -62,11 +57,14 @@
 
     }
 
+    $("#questionOne").html(triviaQuestions.questions[0]);
     $("#questionOne").append(triviaQuestions.questions[0]);
 
     console.log(triviaQuestions);
     console.log(triviaQuestions.questions[0]);
     console.log(triviaQuestions.question1);
+
+    $("#button1").html("<button 'True' />")
 
     $("#questionOne").append(triviaQuestions.questions[1]);
 
@@ -92,17 +90,24 @@
 
 
 
-    //  The stop function
+
     function stop() {
 
-      //  Clears our intervalId
-      //  We just pass the name of the interval
-      //  to the clearInterval function.
       clearInterval(intervalId);
     }
 
-    //  Execute the run function.
     run();
+
+    //things left to do:
+
+    	//formatting
+    	//make questions display
+    	//make 'true' and 'false' buttons appear beneath each
+    	//make those buttons reactive: if the user chooses the correct button, log it as correct, and the wrong button will be logged as incorrect
+    	//ensure only one button can be clicked at a time
+    	//when the timer reaches zero, load a new page (or maybe make an alert) that lists the number correct, the number incorrect, and the number unanswered (if applicable)
+    	//reset the parameters and page values after ten seconds (make another timer)
+    	
 
 
 
